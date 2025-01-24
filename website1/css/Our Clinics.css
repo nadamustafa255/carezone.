@@ -1,0 +1,322 @@
+:root {
+    --primary-color: #1B4B43;
+    --secondary-color: #C4E4E7;
+    --background-color: #e6f7ff;
+    --text-color: #213547;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f9ff;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1B4D3E; /* خلفية داكنة */
+    padding: 1rem 2rem;
+    position: fixed; /* شريط التنقل ثابت */
+    top: 0; /* مثبت في أعلى الصفحة */
+    width: 100%; /* يغطي عرض الصفحة بالكامل */
+    z-index: 900; /* يظهر فوق جميع العناصر الأخرى */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* ظل أسفل الشريط */
+    transition: background-color 0.3s ease; /* تأثير تغيير لون الشريط */
+  }
+  
+  .header:hover {
+    background-color: #173d33; /* لون أغمق عند التمرير */
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 50px;
+    float: left; /* يحرك الشعار إلى اليسار */
+    transition: transform 0.3s ease; /* تأثير تكبير عند التمرير */
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1); /* تكبير الشعار عند التمرير */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem; /* تقليل المسافة بين الروابط */
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px; /* تقليل حجم النص قليلاً */
+    padding: 0.5rem 0.8rem; /* تعديل الحواف الداخلية للروابط */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .nav-links a:hover {
+    background: linear-gradient(45deg, #b2dfdb, #e0f2f1); /* تدرج من الأخضر الفاتح إلى الأزرق الباهت */
+    color: #004d40; /* لون نص أخضر غامق ينسجم مع الخلفية */
+  }
+  
+  
+  
+  
+  /* تحسين صورة البروفايل */
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* عرض العنصر */
+    height: 40px; /* ارتفاع العنصر */
+    border-radius: 50%; /* يجعل الصورة دائرية */
+    overflow: hidden; /* إخفاء الزوائد */
+    cursor: pointer; /* مؤشر يشير لإمكانية النقر */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* ظل مميز */
+  }
+  
+  .profile-container:hover {
+    transform: scale(1.1); /* تكبير الصورة قليلاً عند التمرير */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* ظل أكبر */
+  }
+  
+  .profile-image {
+    width: 100%; /* عرض الصورة بالكامل داخل العنصر */
+    height: 100%; /* ارتفاع الصورة بالكامل داخل العنصر */
+    object-fit: cover; /* ضمان ملاءمة الصورة للعنصر */
+  }
+  
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.clinics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Existing clinic card styles remain the same */
+.clinic-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.clinic-card:hover {
+    transform: translateY(-5px);
+}
+
+.clinic-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.clinic-info {
+    padding: 1.5rem;
+}
+
+.clinic-info h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+}
+
+.contact-info p img {
+    width: 16px;
+    height: 16px;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: white;
+    border: 2px solid #174C4F;
+    color: #174C4F;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #174C4F;;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.contact-info button {
+    background-color: #174C4F;;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-info button:hover {
+    background-color: #92D3E9;
+}
+
+
+ /* Footer Section */
+  .main-footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #E6F7FF;
+    margin-bottom: 1rem;
+    
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #E6F7FF;
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .clinics-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}

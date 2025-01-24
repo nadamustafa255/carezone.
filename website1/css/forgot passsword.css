@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #1B4242;
+    --secondary-color: #5C8374;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--background-color); /* لون الخلفية */
+    padding: 1rem 2rem; /* مساحة داخلية */
+    top: 0;
+    z-index: 1000; /* يظهر دائمًا فوق المحتويات الأخرى */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* لضبط العناصر على الطرف الأيمن */
+    gap: 2rem; /* مسافة بين العناصر */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);/* لون النص */
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease; /* تأثيرات على اللون والحركة */
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1); /* تكبير النص قليلاً */
+}
+
+.navbar a.active {
+    color: var(--primary-color);/* لون النص للصفحة الحالية */
+    border-bottom: 2px solid var(--primary-color); /* خط تحت النص */
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.form-section {
+    flex: 1;
+    max-width: 400px;
+}
+
+.form-section h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: #f3f4f6;
+    font-size: 1rem;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.reset-btn:hover {
+    background-color: #115e59;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #0f766e;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #f7f9fc;
+    display: flex;
+    align-items: center; /* لمحاذاة الصورة عموديًا */
+    justify-content: center; /* لمحاذاة الصورة أفقيًا */
+    padding: 2rem;
+    height: 100%; /* تأكد من أن القسم يغطي المساحة المطلوبة */
+}
+
+
+.image-section img {
+    width: auto;
+    max-width: 100%; /* تأكد من أنها لا تتجاوز عرض القسم */
+    height: auto;
+    max-height: 456px; /* يمكنك تعديل هذا إذا أردت */
+    border-radius: 16px; /* لإضافة زوايا مستديرة */
+    object-fit: contain; /* يحافظ على أبعاد الصورة داخل القسم */
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* القائمة تصبح عمودية */
+        align-items: center; /* توسيط العناصر */
+        gap: 1rem;
+    }
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form-section {
+        order: 1;
+        width: 100%;
+    }
+
+    .image-section {
+        order: 2;
+        justify-content: center;
+        align-items: center;
+    }
+}

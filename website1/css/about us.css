@@ -1,0 +1,195 @@
+:root {
+    --primary-color: #1B4B43;
+    --secondary-color: #C4E4E7;
+    --background-color: #e6f7ff;
+    --text-color: #213547;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+body {
+    background: linear-gradient(to right, #fff, var(--secondary-color));
+    color: var(--text-color);
+}
+
+/* Header Styles */
+.header {
+    background-color: #1B4D3E;
+    padding: 1rem 2rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    float: left; /* This will float the logo to the left */
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.join-us-btn {
+    background-color:#E6F7FF;
+    color: #000000;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #d0dfe0; /* لون خلفية شريط البحث */
+    border-radius: 25px; /* زوايا دائرية */
+    padding: 5px 10px;
+    width: 350px; /* عرض شريط البحث */
+  }
+  
+  #search-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    flex: 1; /* لجعل الحقل يتمدد */
+    font-size: 16px;
+    color: #78909c; /* لون النص */
+  }
+  
+  #search-button {
+    background-color: transparent;
+    border: none;
+    color: #003f46; /* لون الأيقونة */
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    color: #005f6b; /* لون مختلف عند التمرير */
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Section */
+.about-section {
+    padding: 4rem 2rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-images {
+    position: relative;
+    flex: 1;
+    
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.floating-image {
+    position: absolute;
+    bottom: -130px;
+    right: -130px;
+}
+
+
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Values Section */
+.values-section {
+    padding: 4rem 2rem;
+}
+
+.values-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.value-card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.value-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
