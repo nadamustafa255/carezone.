@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Store</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/Medicine Store.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/Untitled1.png" type="icon" />
+</head>
+<script src="js/nav.js"></script>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="home page.html">
+                    <img src="img/logo.jpg" alt="CareZone" />
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="home page.html" >Home</a>
+                <a href="about us.html">About us</a> 
+                <a href="services.html">Services</a> 
+                <a href="news.html" >News</a>
+                <a href="contact us.html" >Contact</a>
+
+              <div class="search-container">
+                <button id="search-icon">
+                  <i class="fas fa-search"></i>
+                </button>
+                <input type="text" id="search-input" placeholder="Search here" />
+              </div>
+              <div class="profile-container">
+                <img src="img/abstract-user-flat-4.svg" alt="Profile" class="profile-image" sizes="200px" onclick="checkLogin()" />
+            </div>
+            </div>
+            </div>
+            </nav>
+        
+        
+        </header>
+      
+
+    <main class="products-container">
+        <div class="products-grid">
+            <!-- Panadol All-In-One -->
+            <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <a href="buy-panadol-all-in-one.html">
+                    <img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/product-detail/380x463-new/Cold-n-Flu-All-in-One-p.png?auto=format" alt="Panadol All-In-One" class="product-image">
+                </a>
+                <h3 class="product-title">Panadol All-In-One</h3>
+                <div class="product-price">
+                    <span class="price-original">\$16.48</span>
+                    <span class="price-discounted">\$6.48</span>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button"><i class="far fa-heart"></i></button>
+                    <a href="buy-panadol-all-in-one.html" class="action-button"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="view-panadol-all-in-one.html" class="action-button"><i class="far fa-eye"></i></a>
+                </div>
+            </div>
+
+            <!-- Panadol Extra -->
+            <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <a href="buy-panadol-extra.html">
+                    <img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/product-detail/380x463-new/Panadol-Extra.jpg?auto=format" alt="Panadol Extra" class="product-image">
+                </a>
+                <h3 class="product-title">Panadol Extra</h3>
+                <div class="product-price">
+                    <span class="price-original">\$14.99</span>
+                    <span class="price-discounted">\$9.99</span>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button"><i class="far fa-heart"></i></button>
+                    <a href="buy-panadol-extra.html" class="action-button"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="view-panadol-extra.html" class="action-button"><i class="far fa-eye"></i></a>
+                </div>
+            </div>
+
+            <!-- Panadol Advance -->
+            <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <a href="buy-panadol-advance.html">
+                    <img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/product-detail/panadol-advance/Panadol-Advance-380x463.png?auto=format" alt="Panadol Advance" class="product-image">
+                </a>
+                <h3 class="product-title">Panadol Advance</h3>
+                <div class="product-price">
+                    <span class="price-original">\$16.48</span>
+                    <span class="price-discounted">\$6.48</span>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button"><i class="far fa-heart"></i></button>
+                    <a href="buy-panadol-advance.html" class="action-button"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="view-panadol-advance.html" class="action-button"><i class="far fa-eye"></i></a>
+                </div>
+            </div>
+
+            <!-- Cold & Flu Relief -->
+            <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <a href="buy-cold-flu-relief.html">
+                    <img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_ME/product-detail/380x463-new/Cold-n-Flu-Day.jpg?auto=format" alt="Cold & Flu Relief" class="product-image">
+                </a>
+                <h3 class="product-title">Cold & Flu Relief</h3>
+                <div class="product-price">
+                    <span class="price-original">\$12.99</span>
+                    <span class="price-discounted">\$8.99</span>
+                </div>
+                <div class="product-actions">
+                    <button class="action-button"><i class="far fa-heart"></i></button>
+                    <a href="buy-cold-flu-relief.html" class="action-button"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="view-cold-flu-relief.html" class="action-button"><i class="far fa-eye"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <a href="mailto:carezonecarezone3@gmail.com">Email: carezonecarezone3@gmail.com</a>                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="meet your doctor .html">Find a Doctor</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <li><a href="meet your doctor .html">Find a Doctor</a></li>
+                <li><a href="conect  Expert Doctor.html">Book Appointments</a></li>
+                <li><a href="Medicine Store.html">Pharmacy Services</a></li>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
